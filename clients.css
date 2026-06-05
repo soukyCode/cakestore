@@ -1,0 +1,82 @@
+:root {
+  --pink: #FF8CC6;
+  --purple: #C08CFF;
+  --blue: #7AC7FF;
+  --soft-white: #F9F9FF;
+  --dark-blue: #2D5B89;
+
+  --gradient: linear-gradient(135deg, #FF8CC6, #C08CFF, #7AC7FF);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--gradient);
+  padding: 20px;
+}
+
+/* Header */
+header h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 35px;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+
+/* Grid */
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Client Card */
+.client-card {
+  background: var(--soft-white);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.client-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.2);
+}
+
+/* Image */
+.client-img {
+  width: 95px;
+  height: 95px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--purple);
+  margin-bottom: 15px;
+}
+
+/* Name */
+.client-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--dark-blue);
+  margin-bottom: 10px;
+}
+
+/* Comment */
+.client-comment {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Stars */
+.stars {
+  font-size: 20px;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}

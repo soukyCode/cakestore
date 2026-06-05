@@ -1,0 +1,150 @@
+/* COLOR PALETTE */
+:root {
+  --pink-main: #F7B6D8;
+  --lavender: #A58BD0;
+  --baby-blue: #9CC6F0;
+  --soft-pink: #FADDEB;
+  --mint: #C4F1E2;
+  --glitter-purple: #B05ACF;
+  --dark-purple: #4A2A59;
+}
+
+body {
+  margin: 0;
+  background: var(--soft-pink);
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark-purple);
+}
+
+/* NAVBAR */
+.navbar {
+  background: linear-gradient(90deg, var(--pink-main), var(--lavender));
+  padding: 15px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 0;
+}
+
+.navbar .brand {
+  margin-right: auto;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.hero-text h1 {
+  color: var(--glitter-purple);
+  font-size: 50px;
+}
+
+.hero-text h2 {
+  color: var(--lavender);
+}
+
+.hero-text p {
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--lavender);
+  color: white;
+  padding: 12px 22px;
+  border-radius: 12px;
+  margin-top: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: var(--glitter-purple);
+}
+
+.hero-img {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.1);
+}
+
+/* PRODUCTS SECTION */
+.products-preview {
+  text-align: center;
+  padding: 40px;
+}
+
+.section-title {
+  font-size: 32px;
+  color: var(--lavender);
+  margin-bottom: 25px;
+}
+
+.products-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  width: 250px;
+  padding-bottom: 15px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+
+.card h4 {
+  color: var(--glitter-purple);
+  margin: 10px 0;
+}
+
+.card p {
+  padding: 0 10px;
+}
+
+.btn.small {
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+  background: var(--lavender);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+img{
+  width: 250px;
+  height: 250px;
+}
